@@ -15,7 +15,7 @@
   <email>github@elblinkin.info</email>
   <active>yes</active>
  </lead>
- <date>2011-09-27</date>
+ <date>2011-09-28</date>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -27,7 +27,7 @@
  <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
  <notes>-</notes>
  <contents>
-   <dir name="/PHP/CodeSniffer/Standards">
+   <dir name="/PHP/CodeSniffer/Standards/">
     <dir name="PHPUnitStandard">
      <file name="ruleset.xml" role="data" />
      <dir name="Sniffs">
@@ -37,11 +37,11 @@
        <file name="ExtraneousClassSniff.php" role="php" />
        <file name="FileNameSuffixSniff.php" role="php" />
        <file name="NoInterfacesSniff.php" role="php" />
-       <file name="NoPrivateMethosSniff.php" role="php" />
+       <file name="NoPrivateMethodsSniff.php" role="php" />
        <file name="ProvenTestCaseSniff.php" role="php" />
        <file name="TestOrProviderFunctionsOnlySniff.php" role="php" />
        <file name="TestOrProviderIsPublicSniff.php" role="php" />
-       <file name="NoInterfacesSniff.php" role="php" />
+       <file name="UnusedProviderSniff.php" role="php" />
       </dir>
      </dir>
     </dir>
