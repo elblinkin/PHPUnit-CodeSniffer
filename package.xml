@@ -28,10 +28,8 @@
  <notes>-</notes>
  <contents>
    <dir name="/PHP/CodeSniffer/Standards">
-    <file name="LICENSE" role="doc" />
-    <file name="README.md" role="doc" />
     <dir name="PHPUnitStandard">
-     <file name="ruleset.xml" />
+     <file name="ruleset.xml" role="data" />
      <dir name="Sniffs">
       <dir name="Testing">
        <file name="AllowedFunctionOverrideSniff.php" role="php" />
