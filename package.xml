@@ -27,9 +27,9 @@
  <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
  <notes>-</notes>
  <contents>
-   <dir name="/PHP/CodeSniffer/Standards/">
+   <dir name="/" baseinstalldir="PHP/CodeSniffer/Standards">
     <dir name="PHPUnitStandard">
-     <file name="ruleset.xml" role="data" />
+     <file name="ruleset.xml" role="php" />
      <dir name="Sniffs">
       <dir name="Testing">
        <file name="AllowedFunctionOverrideSniff.php" role="php" />
