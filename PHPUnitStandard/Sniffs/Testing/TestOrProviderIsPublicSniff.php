@@ -24,16 +24,8 @@ implements PHP_CodeSniffer_Sniff {
      * @return void
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr) {
-        $filename = $phpcsFile->getFileName();
-        preg_match("@.*/tests/phpunit/(.*).php@", $filename, $matches);
-        $expected = str_replace("/", "_", $matches[1]);
-
         $classStackPtr = $phpcsFile->findPrevious(T_CLASS, $stackPtr);
         $className = $phpcsFile->getDeclarationName($classStackPtr);
-        if ($className != $expected) {
-            return;
-        }
-
         $properties = $phpcsFile->getMethodProperties($stackPtr);
         $functionName = $phpcsFile->getDeclarationName($stackPtr);
         if (in_array($properties['scope'], array('private', 'protected'))) {

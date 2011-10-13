@@ -27,7 +27,14 @@ implements PHP_CodeSniffer_Sniff {
         $origStackPtr = $stackPtr;
 
         $filename = $phpcsFile->getFileName();
-        preg_match("@.*/tests/phpunit/(.*).php@", $filename, $matches);
+        if(!preg_match("@.*/tests/phpunit/(.*).php@", $filename, $matches)) {
+            $phpcsFile->addWarning(
+                'File path does not match expected convention.',
+                $stackPtr
+            );
+            return;
+        }
+        
         $expected = str_replace("/", "_", $matches[1]);
 
         $found = array();
