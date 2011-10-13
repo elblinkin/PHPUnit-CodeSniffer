@@ -33,15 +33,7 @@ implements PHP_CodeSniffer_Sniff {
      * @return void
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr) {
-        $filename = $phpcsFile->getFileName();
-        preg_match("@.*/tests/phpunit/(.*).php@", $filename, $matches);
-        $expected = str_replace("/", "_", $matches[1]);
-
         $declarationName = $phpcsFile->getDeclarationName($stackPtr);
-        if ($declarationName != $expected) {
-            return;
-        }
-
         $extendedClassName = $phpcsFile->findExtendedClassName($stackPtr);
         if (!($extendedClassName
             && in_array($extendedClassName, $this->classNameWhitelist))
