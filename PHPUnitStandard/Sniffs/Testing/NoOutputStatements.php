@@ -3,8 +3,7 @@ class PHPUnitStandard_Sniffs_Testing_NoOutputStatements implements PHP_CodeSniff
 {
     public function register()
     {
-        return array(T_ECHO);
-        return array(T_PRINT);
+        return array(T_ECHO, T_PRINT);
     }
 
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
