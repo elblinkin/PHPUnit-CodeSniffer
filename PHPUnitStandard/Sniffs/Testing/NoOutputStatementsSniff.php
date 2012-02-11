@@ -1,5 +1,5 @@
 <?php
-class PHPUnitStandard_Sniffs_Testing_NoOutputStatements implements PHP_CodeSniffer_Sniff
+class PHPUnitStandard_Sniffs_Testing_NoOutputStatementsSniff implements PHP_CodeSniffer_Sniff
 {
     public function register()
     {
