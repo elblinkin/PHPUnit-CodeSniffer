@@ -45,7 +45,7 @@
        <file name="TestOrProviderFunctionsOnlySniff.php" role="php" />
        <file name="TestOrProviderIsPublicSniff.php" role="php" />
        <file name="UnusedProviderSniff.php" role="php" />
-       <file name="ValidFunctionNameSniff.php" role="ph" />
+       <file name="ValidFunctionNameSniff.php" role="php" />
       </dir>
      </dir>
     </dir>
