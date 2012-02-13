@@ -37,7 +37,6 @@
        <file name="ExtraneousClassSniff.php" role="php" />
        <file name="FileNameSuffixSniff.php" role="php" />
        <file name="NoInterfacesSniff.php" role="php" />
-       <file name="NoOutputFunctionSniff.php" role="php" />
        <file name="NoOutputStatementsSniff.php" role="php" />
        <file name="NoPrivateMethodsSniff.php" role="php" />
        <file name="NoReflectionSniff.php" role="php" />
