@@ -15,10 +15,10 @@
   <email>github@elblinkin.info</email>
   <active>yes</active>
  </lead>
- <date>2011-10-13</date>
+ <date>2012-02-11</date>
  <version>
-  <release>0.1.1</release>
-  <api>0.1.1</api>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
  </version>
  <stability>
   <release>beta</release>
@@ -37,7 +37,10 @@
        <file name="ExtraneousClassSniff.php" role="php" />
        <file name="FileNameSuffixSniff.php" role="php" />
        <file name="NoInterfacesSniff.php" role="php" />
+       <file name="NoOutputFunctionSniff.php" role="php" />
+       <file name="NoOutputStatementsSniff.php" role="php" />
        <file name="NoPrivateMethodsSniff.php" role="php" />
+       <file name="NoReflectionSniff.php" role="php" />
        <file name="ProvenTestCaseSniff.php" role="php" />
        <file name="TestOrProviderFunctionsOnlySniff.php" role="php" />
        <file name="TestOrProviderIsPublicSniff.php" role="php" />

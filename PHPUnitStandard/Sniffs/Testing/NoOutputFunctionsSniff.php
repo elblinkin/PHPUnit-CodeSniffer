@@ -3,7 +3,7 @@ class PHPUnitStandard_Sniffs_Testing_NoOutputFunctionsSniff extends Generic_Snif
 {
     protected $forbiddenFunctions = array(
       'printf' => NULL,
-      'print_r' => NULL
-      'var_dump' => NULL
+      'print_r' => NULL,
+      'var_dump' => NULL,
     );
 }
